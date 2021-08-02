@@ -1,0 +1,147 @@
+<! DOCTYPE html>
+<html><head><title>
+
+</title>
+<style>
+a{color:white;
+  text-decoration:none;}
+ h1{color:goldenrod;
+    font-size:xx-large;}
+	p{color:white;}
+.pam{color:white;
+text-align:center;
+font-size:large;}
+select{width:400;
+       height:30px;
+	   background-color:lightskyblue;
+	   }
+input{width:400px;
+height:30px;
+background-color:lightskyblue}
+td{color:white;
+padding:10px;}
+
+	   
+</style>
+<script type="text/javascript">
+<!--
+   function validateforim(){
+   var descript=document.formy.descript.value;
+   var cname=document.formy.cname.value;
+   
+   if(descript<=0 ){
+   alert("Please enter course description");}
+   
+   if(descript>50){
+   alert("Description should be less than 50 characters");}
+   
+   if(cname<=0){
+   alert("Please Enter Instructors Name");
+   }
+   
+   if(cname>30){
+   alert("Instructors Name Should be less than 30 characters");
+   }
+   }
+   //-->
+</script>
+</head>
+
+<body style background="canvaboxes.png">
+<div style=" height:70px;">
+<center>
+<ul><li style="display:inline;"><a href="Homepage.html">Home</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<li style="display:inline;"><a href="about me.html">About me</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<li style="display:inline;"><a href="register.html">Registration</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<li style="display:inline;"><a href="courses.html">Courses</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<li style="display:inline;"><a href="cv.html">CV</a></li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<li style="display:inline;"><a href="contacts.html">Contacts</a></li>
+</ul>
+</center>
+</div>
+<div class="pam">
+<center>
+<form action ="" method="POST" name="formy" onsubmit="return validateforim(); " >
+<table>
+<tr>
+<td>Course Name</td>
+<td>
+<select>
+<option>Web programming</option><option>Programing in Java</option><option>Development Perspectives II</option>
+<option>Introduction to Computer Networks</option><option>Computer Hardware and System Maintainance</option>
+<option>Discrete Structure</option><option>Bussiness in computer Communication</option>
+<option>Fondation of Analysis</option><option>Programming in C</option>
+<option>Intoduction to Information System</option><option>Communication For Engineering Studies</option>
+<option>Development Perspective I</option><option>Computer Organisation and Architecture</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Course Code</td>
+<td>
+<select>
+<option>IS 181</option><option>CS 175 </option><option>DS 113 </option>
+<option>IS 171</option><option>IS 158 </option><option>IS 143 </option>
+<option>CS 173 </option><option>MT 100</option><option>CS 172</option>
+<option>IS 162</option><option>CL 111</option><option>DS 112</option>
+<option>CS 151</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Brief Course Description</td>
+<td><input type="text" name="descript"></td>
+</tr>
+<tr>
+<td>Department Offered</td>
+<td>
+<select>
+<option>Department Computer Science and Engineering</option>
+<option>Department of Institute of Development Studies</option>
+<option>Department of Communication Skills</option>
+<option></option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Semester Offered</td>
+<td>
+<select>
+<option>First Semister</option>
+<option>Second Semister</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Academic Year</td>
+<td>
+<select>
+<option>2020/2021</option><option>2021/2022</option>
+</select>
+</td>
+</tr>
+<tr> 
+<td>Course Instructor Name</td>
+<td>
+<input type="text" name="cname">
+</td>
+</tr>
+<tr>
+<td>Results</td>
+<td>
+<select>
+<option>Grade A</option><option>Grade B+</option><option>Grade B</option><option>Grade D</option>
+<option>Grade E</option><option>Grade F</option>
+</select>
+ </td>
+ </tr>
+ </table>
+ 
+ <p>
+ <label><input type ="submit" value="submit" style="width:100px;height:30px; background-color:lightsteelblue;">
+ </p>
+</form>
+</center>
+</div>
+</body>
+</html>
